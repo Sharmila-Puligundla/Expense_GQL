@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import TransactionFormSkeleton from "../components/skeletons/TransactionFormSkeleton.jsx";
 const TransactionPage = () => {
 	const [formData, setFormData] = useState({
 		description: "",
@@ -22,7 +22,7 @@ const TransactionPage = () => {
 		}));
 	};
 
-	// if (loading) return <TransactionFormSkeleton />;
+	//if loading return <TransactionFormSkeleton />;
 
 	return (
 		<div className='h-screen max-w-4xl mx-auto flex flex-col items-center'>
